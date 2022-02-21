@@ -1,14 +1,13 @@
-import { Controller, Get, RequestMapping } from '@nestjs/common';
+import { Controller, Get } from '@nestjs/common';
 import { Board } from './board.model';
 import { BoardsService } from './boards.service';
 
-
 @Controller('boards')
 export class BoardsController {
-    constructor(private boardService: BoardsService){}
+  constructor(private boardService: BoardsService) {}
 
-    @Get()
-    getAllBoard() : Board[]{
-        return this.boardService.getAllBoard();
-    }
+  @Get()
+  getAllBoard(): Board[] {
+    return this.boardService.getAllBoard();
+  }
 }

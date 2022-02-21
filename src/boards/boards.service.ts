@@ -3,9 +3,9 @@ import { Board } from './board.model';
 
 @Injectable()
 export class BoardsService {
-    private boards: Board[] = [];
+  private boards: Board[] = [];
 
-    getAllBoard() : Board[] {
-        return this.boards;
-    }
+  getAllBoard(): Board[] {
+    return this.boards;
+  }
 }
