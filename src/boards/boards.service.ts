@@ -41,7 +41,9 @@ export class BoardsService {
 
   updateBoardStatus(id: string, status: BoardStatus): Board {
     const board = this.getBoardById(id);
+    console.log(status);
     board.status = status;
+    console.log(board);
     return board;
   }
 }
