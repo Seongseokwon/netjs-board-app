@@ -5,6 +5,10 @@ export interface Board {
   status: BoardStatus;
 }
 
+export interface IBoard {
+  id: string;
+}
+
 export const enum BoardStatus {
   PUBLIC = 'PUBLIC',
   PRIVATE = 'PRIVATE',
